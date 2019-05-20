@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1275fda9-ac3f-408f-a63a-8009b5597727" name="Default Changelist" comment="" />
+    <list default="true" id="1275fda9-ac3f-408f-a63a-8009b5597727" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Enemy/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Enemy/EnemyAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/EnemyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/PauseManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/PauseManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Player/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Player/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Complete-Game/_Complete-Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Complete-Game/_Complete-Game.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +51,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/EnemyManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
+            <state>
               <folding>
-                <marker date="1558137150487" expanded="false" signature="6:52" ph="..." />
+                <marker date="1558137150487" expanded="true" signature="6:52" ph="..." />
                 <marker date="1558137150487" expanded="true" signature="79:1825" ph="{...}" />
                 <marker date="1558137150487" expanded="true" signature="127:1823" ph="{...}" />
                 <marker date="1558137150487" expanded="true" signature="572:850" ph="{...}" />
@@ -76,8 +82,6 @@
                 <marker date="1558321941235" expanded="true" signature="590:628" ph="{...}" />
                 <marker date="1558321941235" expanded="true" signature="642:682" ph="{...}" />
                 <marker date="1558321941235" expanded="true" signature="707:812" ph="{...}" />
-                <marker date="1558321941235" expanded="true" signature="836:889" ph="{...}" />
-                <marker date="1558321941235" expanded="true" signature="866:886" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -226,12 +230,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558321268363</updated>
       <workItem from="1558321271724" duration="107000" />
-      <workItem from="1558321409192" duration="2201000" />
+      <workItem from="1558321409192" duration="2203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2308000" />
+    <option name="totallyTimeSpent" value="2310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,8 +327,6 @@
             <marker date="1558321941235" expanded="true" signature="590:628" ph="{...}" />
             <marker date="1558321941235" expanded="true" signature="642:682" ph="{...}" />
             <marker date="1558321941235" expanded="true" signature="707:812" ph="{...}" />
-            <marker date="1558321941235" expanded="true" signature="836:889" ph="{...}" />
-            <marker date="1558321941235" expanded="true" signature="866:886" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -345,9 +347,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/_Complete-Game/Scripts/Managers/EnemyManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
+        <state>
           <folding>
-            <marker date="1558137150487" expanded="false" signature="6:52" ph="..." />
+            <marker date="1558137150487" expanded="true" signature="6:52" ph="..." />
             <marker date="1558137150487" expanded="true" signature="79:1825" ph="{...}" />
             <marker date="1558137150487" expanded="true" signature="127:1823" ph="{...}" />
             <marker date="1558137150487" expanded="true" signature="572:850" ph="{...}" />

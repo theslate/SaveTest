@@ -56,4 +56,12 @@ public class PauseManager : MonoBehaviour {
 		Application.Quit();
 		#endif
 	}
+
+	public void Unpause()
+	{
+		if (Time.timeScale == 0)
+		{
+			Pause();
+		}
+	}
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace CompleteProject
 {
@@ -8,14 +9,24 @@ namespace CompleteProject
         public GameObject enemy;                // The enemy prefab to be spawned.
         public float spawnTime = 3f;            // How long between each spawn.
         public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
-
+        public List<GameObject> spawnedEnemies { get; set; }
 
         void Start ()
         {
-            // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
-            InvokeRepeating ("Spawn", spawnTime, spawnTime);
+            spawnedEnemies = new List<GameObject>();
+
+            // If there is no game save loader, we need to start spawning
+            if (FindObjectOfType<GameSaveLoader>() == null)
+            {
+                StartSpawning(spawnTime);
+            }
         }
 
+        public void StartSpawning(float firstSpawnTime)
+        {
+            // Call the Spawn function after a delay of the spawnTime and then continue to call after the same amount of time.
+            InvokeRepeating ("Spawn", firstSpawnTime, spawnTime);
+        }
 
         void Spawn ()
         {
@@ -30,7 +41,8 @@ namespace CompleteProject
             int spawnPointIndex = Random.Range (0, spawnPoints.Length);
 
             // Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            var spawnedEnemy = Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            spawnedEnemies.Add(spawnedEnemy);
         }
     }
 }

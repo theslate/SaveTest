@@ -56,6 +56,14 @@ namespace CompleteProject
             damaged = false;
         }
 
+        public void SetHealth(int amount)
+        {
+            currentHealth = amount;
+
+            // Set the health bar's value to the current health.
+            healthSlider.value = currentHealth;
+        }
+
 
         public void TakeDamage (int amount)
         {
@@ -63,10 +71,7 @@ namespace CompleteProject
             damaged = true;
 
             // Reduce the current health by the damage amount.
-            currentHealth -= amount;
-
-            // Set the health bar's value to the current health.
-            healthSlider.value = currentHealth;
+            SetHealth(currentHealth - amount);
 
             // Play the hurt sound effect.
             playerAudio.Play ();
@@ -78,7 +83,6 @@ namespace CompleteProject
                 Death ();
             }
         }
-
 
         void Death ()
         {
